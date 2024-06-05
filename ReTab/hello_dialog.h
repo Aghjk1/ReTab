@@ -6,6 +6,9 @@
 #include <stdexcept>
 #include <string>
 #include <array>
+#include <QFileDialog>
+#include <QFile>
+#include <QMessageBox>
 
 namespace Ui {
 class Hello_Dialog;
@@ -22,6 +25,11 @@ public:
     ~Hello_Dialog();
 
     QString get_Response();
+
+private slots:
+    void on_pushButton_obzor_clicked();
+
+    void on_pushButton_clicked();
 
 private:
 

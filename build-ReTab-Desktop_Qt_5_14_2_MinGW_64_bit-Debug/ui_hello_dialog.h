@@ -25,31 +25,31 @@ class Ui_Hello_Dialog
 {
 public:
     QGridLayout *gridLayout;
-    QLabel *label_2;
+    QLabel *label_img;
     QHBoxLayout *horizontalLayout;
     QSpacerItem *horizontalSpacer;
     QLabel *label;
     QSpacerItem *horizontalSpacer_2;
     QHBoxLayout *horizontalLayout_2;
     QLineEdit *lineEdit;
-    QPushButton *pushButton_2;
+    QPushButton *pushButton_obzor;
     QPushButton *pushButton;
 
     void setupUi(QDialog *Hello_Dialog)
     {
         if (Hello_Dialog->objectName().isEmpty())
             Hello_Dialog->setObjectName(QString::fromUtf8("Hello_Dialog"));
-        Hello_Dialog->resize(500, 300);
-        Hello_Dialog->setMinimumSize(QSize(500, 300));
-        Hello_Dialog->setMaximumSize(QSize(500, 300));
+        Hello_Dialog->resize(600, 320);
+        Hello_Dialog->setMinimumSize(QSize(600, 320));
+        Hello_Dialog->setMaximumSize(QSize(600, 320));
         Hello_Dialog->setModal(true);
         gridLayout = new QGridLayout(Hello_Dialog);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        label_2 = new QLabel(Hello_Dialog);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setPixmap(QPixmap(QString::fromUtf8("blanks/ReTab_Log_hello.png")));
+        label_img = new QLabel(Hello_Dialog);
+        label_img->setObjectName(QString::fromUtf8("label_img"));
+        label_img->setPixmap(QPixmap(QString::fromUtf8("blanks/ReTab_Log_hello.png")));
 
-        gridLayout->addWidget(label_2, 0, 0, 3, 1);
+        gridLayout->addWidget(label_img, 0, 0, 3, 1);
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
@@ -76,10 +76,10 @@ public:
 
         horizontalLayout_2->addWidget(lineEdit);
 
-        pushButton_2 = new QPushButton(Hello_Dialog);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_obzor = new QPushButton(Hello_Dialog);
+        pushButton_obzor->setObjectName(QString::fromUtf8("pushButton_obzor"));
 
-        horizontalLayout_2->addWidget(pushButton_2);
+        horizontalLayout_2->addWidget(pushButton_obzor);
 
 
         gridLayout->addLayout(horizontalLayout_2, 1, 1, 1, 1);
@@ -98,10 +98,10 @@ public:
     void retranslateUi(QDialog *Hello_Dialog)
     {
         Hello_Dialog->setWindowTitle(QCoreApplication::translate("Hello_Dialog", "\320\222\321\213\320\261\320\276\321\200 \320\261\320\260\320\267\321\213 \320\264\320\260\320\275\320\275\321\213\321\205", nullptr));
-        label_2->setText(QString());
+        label_img->setText(QString());
         label->setText(QCoreApplication::translate("Hello_Dialog", "\320\222\320\262\320\265\320\264\320\270\321\202\320\265 \320\277\321\203\321\202\321\214 \320\272 \320\261\320\264", nullptr));
         lineEdit->setText(QString());
-        pushButton_2->setText(QCoreApplication::translate("Hello_Dialog", "\320\236\320\261\320\267\320\276\321\200", nullptr));
+        pushButton_obzor->setText(QCoreApplication::translate("Hello_Dialog", "\320\236\320\261\320\267\320\276\321\200", nullptr));
         pushButton->setText(QCoreApplication::translate("Hello_Dialog", "\320\237\321\200\320\270\320\274\320\265\320\275\320\270\321\202\321\214", nullptr));
     } // retranslateUi
 
